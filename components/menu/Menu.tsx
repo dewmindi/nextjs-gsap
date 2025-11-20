@@ -20,7 +20,8 @@ const Menu = () => {
   const container = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const tl = useRef();
+  const tl = useRef<any>(null);
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
